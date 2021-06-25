@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <title>Больше Золота!</title>
+</head>
+<body>
+  <script>
+    function loadData() {
+      return new Promise((resolve, reject) => {
+        setTimeout(resolve, 2000);
+      })
+    }
+
+    loadData()
+      .then(() => {
+        let preloaderEl = document.querySelector('.preloader');
+        preloaderEl.classList.add('hidden');
+        preloaderEl.classList.remove('visible');
+      });
+  </script>
+
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="preloader__img">
+      <img src="./img/preloader/preloader.png" alt="preloader">
+    </div>
+  </div>
+  <!-- ./preloader -->
+
+  <!-- cards -->
+  <div class="cards">
+    <img src="./img/cards/1.jpg" alt="card" class="card">
+    <img src="./img/cards/2.jpg" alt="card" class="card">
+    <img src="./img/cards/3.jpg" alt="card" class="card">
+    <img src="./img/cards/4.jpg" alt="card" class="card">
+    <img src="./img/cards/5.jpg" alt="card" class="card">
+    <img src="./img/cards/6.jpg" alt="card" class="card">
+    <img src="./img/cards/7.jpg" alt="card" class="card">
+    <img src="./img/cards/8.jpg" alt="card" class="card">
+    <img src="./img/cards/9.jpg" alt="card" class="card">
+    <img src="./img/cards/10.jpg" alt="card" class="card">
+    <img src="./img/cards/11.jpg" alt="card" class="card">
+    <img src="./img/cards/12.jpg" alt="card" class="card">
+    <img src="./img/cards/13.jpg" alt="card" class="card">
+  </div>
+  <!-- /.cards -->
+
+  <!-- main -->
+  <div class="main">
+    <!-- main block -->
+    <div class="main__block main__block_up">
+      <button class="main__btn btn-event">
+        <svg width="33" height="65" viewBox="0 0 33 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M33 21.594H20.46L29.26 6.10352e-05H7.48L0 36.2081H8.58L3.74 65.0001L33 21.594Z" fill="#4F6E9D"/>
+        </svg>
+      </button>
+      <span class="main__text">
+        Здесь будет текст после выпадения какого-либо события
+      </span>
+      <div class="main__counter">
+        <button class="main__btn btn-minus">
+          <svg width="66" height="14" viewBox="0 0 66 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="-0.000164032" width="66" height="14" rx="5" fill="#CDD5ED"/>
+          </svg>
+        </button>
+        <h1 class="main__number">0</h1>
+        <button class="main__btn btn-plus">
+          <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 30.9999C0 28.2384 2.23858 25.9999 5 25.9999H61C63.7614 25.9999 66 28.2384 66 30.9999V34.9999C66 37.7613 63.7614 39.9999 61 39.9999H5C2.23858 39.9999 0 37.7613 0 34.9999V30.9999Z" fill="#697FAB"/>
+            <path d="M31 65.9999C28.2386 65.9999 26 63.7613 26 60.9999L26 4.99987C26 2.23845 28.2386 -0.000129404 31 -0.000129525L35 -0.0001297C37.7614 -0.00012982 40 2.23845 40 4.99987V60.9999C40 63.7613 37.7614 65.9999 35 65.9999H31Z" fill="#697FAB"/>
+          </svg>
+        </button>
+      </div>
+      <svg class="main__heart" width="132" height="119" viewBox="0 0 132 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M94.967 3.05176e-05C83.117 3.05176e-05 72.5837 5.92503 66.0003 15.1417C59.417 5.92503 48.8837 3.05176e-05 37.0337 3.05176e-05C16.6253 3.05176e-05 0.166992 16.4584 0.166992 36.8667C0.166992 65.8334 66.0003 118.5 66.0003 118.5C66.0003 118.5 131.834 65.8334 131.834 36.8667C131.834 16.4584 115.375 3.05176e-05 94.967 3.05176e-05Z" fill="white"/>
+      </svg>
+    </div>
+    <!-- ./main block -->
+
+    <!-- coube -->
+    <img src="./img/cubes/1.png" alt="cube" class="cube">
+
+    <!-- main block -->
+    <div class="main__block main__block_down">
+      <button class="main__btn btn-event">
+        <svg width="33" height="65" viewBox="0 0 33 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M33 21.594H20.46L29.26 6.10352e-05H7.48L0 36.2081H8.58L3.74 65.0001L33 21.594Z" fill="#4F6E9D"/>
+        </svg>
+      </button>
+      <span class="main__text">
+        Здесь будет текст после выпадения какого-либо события
+      </span>
+      <div class="main__counter">
+        <button class="main__btn btn-minus">
+          <svg width="66" height="14" viewBox="0 0 66 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="-0.000164032" width="66" height="14" rx="5" fill="#CDD5ED"/>
+          </svg>
+        </button>
+        <h1 class="main__number">0</h1>
+        <button class="main__btn btn-plus">
+          <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 30.9999C0 28.2384 2.23858 25.9999 5 25.9999H61C63.7614 25.9999 66 28.2384 66 30.9999V34.9999C66 37.7613 63.7614 39.9999 61 39.9999H5C2.23858 39.9999 0 37.7613 0 34.9999V30.9999Z" fill="#697FAB"/>
+            <path d="M31 65.9999C28.2386 65.9999 26 63.7613 26 60.9999L26 4.99987C26 2.23845 28.2386 -0.000129404 31 -0.000129525L35 -0.0001297C37.7614 -0.00012982 40 2.23845 40 4.99987V60.9999C40 63.7613 37.7614 65.9999 35 65.9999H31Z" fill="#697FAB"/>
+          </svg>
+        </button>
+      </div>
+      <svg class="main__heart" width="132" height="119" viewBox="0 0 132 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M94.967 3.05176e-05C83.117 3.05176e-05 72.5837 5.92503 66.0003 15.1417C59.417 5.92503 48.8837 3.05176e-05 37.0337 3.05176e-05C16.6253 3.05176e-05 0.166992 16.4584 0.166992 36.8667C0.166992 65.8334 66.0003 118.5 66.0003 118.5C66.0003 118.5 131.834 65.8334 131.834 36.8667C131.834 16.4584 115.375 3.05176e-05 94.967 3.05176e-05Z" fill="white"/>
+      </svg>
+    </div>
+    <!-- ./main block -->
+  </div>
+  <!-- /.main -->
+
+  <!-- Script -->
+  <script src="./js/script.js"></script>
+</body>
+</html>
